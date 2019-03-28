@@ -55,3 +55,19 @@ cur_delete.execute("delete from AllData")
 conn.commit()
 conn.close()
 ```
+## R shiny
+1. [Shiny cheatsheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf) . 
+    **ui.R**: nested R functions that assemble an HTML user interface. The input objects are used to collect values from users. It inculde textInput, passwordInput, radioInput, selectInput, dateRangeInput and so on.   
+    **server.R**: a function with instructions on how to build and rebuild R objects displayed in the UI. The instructions include some render*() and *output() functions that work together to add R objects to the UI. 
+    
+2. [ShinyDashboard](https://rstudio.github.io/shinydashboard/index.html)
+   Shinydashboard is built using [AdminLTE](https://github.com/ColorlibHQ/AdminLTE), which in turn uses [Bootstrap3](https://getbootstrap.com/).
+   AdminLTE is a template and based on Bootstrap3 framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops.    
+   Bootstrap3 is an open source toolkit for developing with HTML, CSS, and JS.  
+   Icons are used liberally in shinydashboard. [FrontAwesome](https://fontawesome.com/icons?from=io) provides a list of icons. 
+3. [Dashboard themes](https://github.com/nik01010/dashboardthemes)   
+   install.packages("devtools")  
+   devtools::install_github("nik01010/dashboardthemes") . 
+   https://github.com/ropensci/git2r/issues/204   
+4. [Leaflet](https://rstudio.github.io/leaflet/map_widget.html)
+
